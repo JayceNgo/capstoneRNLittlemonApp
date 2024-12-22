@@ -8,7 +8,6 @@ import Checkbox from 'expo-checkbox';
 import colors from '../constants/colors';
 import { fonts } from '../constants/fonts';
 
-
 const Profile = () => {
   const { state, authActions } = useAuth();
 
