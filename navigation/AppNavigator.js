@@ -6,6 +6,7 @@ import { fonts } from '../constants/fonts';
 
 import Onboarding from '../screens/Onboarding';
 import Profile from '../screens/Profile';
+import Home from '../screens/Home';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,11 @@ const AppNavigator = ({ isOnboardingCompleted }) => {
       <Stack.Navigator>
         {isOnboardingCompleted ? (
           <>
+            <Stack.Screen 
+              name="Home" 
+              component={Home} 
+              options={{ headerShown: false }}
+            />
             <Stack.Screen 
               name="Profile" 
               component={Profile}
